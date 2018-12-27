@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+  background:#faf6f0;
+  /* border:30px solid #209ced; */
+  border-radius:6px;
+  padding:5px;
+  max-width:750px;
+  margin:50px auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.todo{
+  position: relative;
+  background: rgb(255, 255, 255);
+  box-shadow:1px 1px 1px rgba(0,0,0,0.15);
+  padding: 3px 10px;
+  font-size: 20px;
+  margin-bottom:6px;
+  border-radius:3px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  width:700px;
+  min-height:50px;
+  margin:16px auto;
+}
+.todo p{
+  max-width:70%;
+  text-align:left;
+}
+
+.input{
+  width:700px;
+  height:50px;
+  padding:3px 10px;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius:7px;
+  box-shadow:1px 1px 1px  #c3c3c3;
+  font-size:20px;
+  transition:all 0.2s ease;
+}
+
+.input:focus{
+  /* transform: scaleY(2); */
+  outline:none;
+  border:1px solid rgba(0,0,0,0.5);
+}
+.complete{
+  min-width:39px;
+  height:25px;
+  /* background:rgba(2,109,119); */
+  background:#39cf5a;
+  border-radius:3px;
+  border:none;
+  color:white;
+  transition:all 0.1s ease-out;
+}
+button:focus{
+  border:none;
+  outline:none;
+}
+
+.dlt{
+  /* color:rgb(149, 236, 34);*/
+  color:rgba(0,0,0,0.5);
+  width:50px;
+  height:100%;
+  position:absolute;
+  top:0;
+  right:-30px;
+  font-size:15px;
+  line-height:20px;
+  padding:3px 10px;
+  background:#dfe9ce;
+  /* background:#f05080; */
+  border:none;
+  visibility: hidden;
+  opacity:0;
+  /* transition:all 0.4s cubic-bezier(0.29, 0.02, 0.36, 1.65);
+   */
+   transition:all 0.1s ease-out;
+}
+
+ .completeShow{
+  transform: translateX(-50px)
+}
+ .dltShow{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(-50px);
+}
